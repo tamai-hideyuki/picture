@@ -130,3 +130,19 @@ python generate.py "cup of coffee on wooden table, steam rising, morning light f
 
 python generate.py "同じプロンプト" --seed 1234567890
 ```
+
+# 仮想環境を作り直す
+
+```python
+# 古い仮想環境を削除
+rm -rf venv
+
+# 現在インストールされているPythonで再作成
+python3 -m venv venv
+
+# 有効化
+source venv/bin/activate
+
+# 依存関係を再インストール
+pip install -r requirements.txt
+```
